@@ -1,0 +1,155 @@
+\documentclass[english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\newcommand*{\QEDA}{\null\nobreak\hfill\ensuremath{\blacksquare}}%
+\newcommand*{\QEDB}{\null\nobreak\hfill\ensuremath{\square}}%
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newlist{labelist}{enumerate}{5}
+\setlist[labelist,1]{label=\Alph*}
+\setlist[labelist,2]{label=\Alph{labelisti}.\arabic*}
+\setlist[labelist,3]{label=\Alph{labelisti}.\arabic{labelistii}.\arabic*}
+\setlist[labelist,4]{label=\Alph{labelisti}.\arabic{labelistii}.\arabic{labelistiii}.\arabic*}
+\setlist[labelist,5]{label=\Alph{labelisti}.\arabic{labelistii}.\arabic{labelistiii}.\arabic{labelistiv}.\arabic*}
+
+\begin{document}
+
+\begin{titlepage}
+    \vfill
+    \begin{minipage}{0.1\textwidth}
+    	\includegraphics[width=2.5cm]{./figures/ENSTA.jpeg}
+    \end{minipage}
+    \hspace*{0.9cm}
+    \begin{minipage}{1\textwidth}
+    
+    	\sc {\LARGE \textbf{ENSTA Paris}}
+    	
+    	{\large École Nationale Supérieure de Techniques Avancées}
+    \end{minipage}
+    
+    \begin{center}
+		\vspace*{6cm}
+		
+		{\large \textbf{IA301 Project Report}}
+		\\
+		{\large\bfseries Future Career Recommendation} \\[4cm]
+
+		{Kevin Sanchez \\ Javier Martinez \\ Yevhenii Sielskyi}
+		
+		\vspace*{2.5cm}
+		{\large \bfseries \today}
+		\vfill
+	\end{center}
+\end{titlepage}
+
+\section{MIRO}
+
+\begin{labelist}
+    \item 
+        \textit{Basics}
+        \begin{labelist}
+            \item Ontology name: Future Career Recommendation (FCR), v1.0.0
+            \item Ontology owner:
+                \begin{itemize}
+                    \item Kevin Alexandro Sanchez Diaz, \href{mailto:kvn9616@gmail.com}{kvn9616@gmail.com}
+                    \item Yevhenii Sielskyi, \href{mailto:youdjin.sel15@gmail.com}{youdjin.sel15@gmail.com}
+                    \item Javier Andres Martinez Boada, \href{mailto:jm0818610@gmail.com}{jm0818610@gmail.com}
+                \end{itemize}
+            \item Ontology license: Creative Commons Attribution 4.0 International License
+            \item Ontology URL: 
+            \item Ontology repository: \href{https://github.com/kvnsnchz/fcr}{https://github.com/kvnsnchz/fcr}
+            \item Methodological framework:
+        \end{labelist}
+    \item 
+        \textit{Motivation}
+        \begin{labelist}
+            \item Need name:o
+            \item Competition:
+            \item Target audience:
+        \end{labelist}
+\end{labelist}
+
+\par A. Basics
+A.1: Ontology name     
+A.2: Ontology owner     
+A.3: Ontology license 
+A.4: Ontology URL 
+A.5: Ontology repository
+A.6: Methodological frameworkw 
+\par B. Motivation
+B.1: Need 
+B.2: Competition 
+B.3: Target audience 
+\par C. Scope, requirements, development community
+C.1: Scope and coverage 
+C.2 evelopment community 
+C.3: Communication 
+\par D. Knowledge acquisition
+D.1: Knowledge acquisition methodology 
+\par E. Ontology content
+E.1: Knowledge Representation language 
+E.2 evelopment environment 
+E.3: Incorporation of other ontologies 
+E.4: Entity naming convention 
+E.5: Identifier generation policy 
+E.6: Entity metadata policy 
+E.7: Upper ontology 
+E.8: Ontology relationships 
+E.9: Axiom patterns 
+\par F. Managing Change
+F.1: Sustainability plan 
+F.2: Entity deprecation strategy 
+F.3: Versioning policy 
+\par G. Quality Assurance
+G.1: Testing 
+G.2: Evaluation 
+G.3: Example of use 
+G.4: Institutional endorsement 
+G.5: Evidence of use 
+
+\section{Class Reference (Provisional Title)}
+
+
+\begin{labelist}
+    \item   
+        \textit{Person}
+        \begin{labelist}
+            \item Student
+            \item NonProfessional
+            \item Professional
+        \end{labelist}
+    \item   
+        \textit{Employment Status} \cite{employment_status_ref}
+        \begin{labelist}
+            \item Unemployed
+            \item Employed
+            	\begin{labelist}
+                  \item Self-Employed
+                  \item Employee
+                  \item Worker
+              \end{labelist}
+        \end{labelist}
+    \item   
+        \textit{Background}
+        \begin{labelist}
+            \item Skill
+            \item Knowledge
+            \item Experience
+            \item Hobby/Interesst \cite{hobbies_list_ref}
+            \item EducationLevel
+        \end{labelist}
+   
+\end{labelist} 
+
+\vspace{5mm}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}
